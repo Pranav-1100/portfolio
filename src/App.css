@@ -3,7 +3,8 @@
 }
 
 .App-logo {
-  height: 40vmin;
+  display: inline-block;
+  height: 10vmin;
   pointer-events: none;
 }
 
@@ -17,7 +18,7 @@
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
-  flex-direction: column;
+  flex-direction: column; /* Changed from row to column */
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
@@ -35,4 +36,10 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.App-header h1 {
+  margin: 20px 0;
+  font-size: 2em;
+  color: #61dafb;
 }
