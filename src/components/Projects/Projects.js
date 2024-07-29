@@ -4,6 +4,7 @@ import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
 import weather from "../../Assets/Screenshot 2024-06-14 113610.png";
 import quiz from "../../Assets/image.png";
+import editor from "../../Assets/Screenshot 2024-07-29 142227.png";
 
 function Projects() {
   return (
@@ -17,6 +18,17 @@ function Projects() {
           Here are a few projects .
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+          <Col md={4} className="Video-Flip Editor">
+            <ProjectCard
+              imgPath={editor}
+              isBlog={false}
+              title="Vide-Flip Editor"
+              description="Edit your video with some basic functionalities like crop video in some given frames and manage video speed, volume and get recording of your edited video with live preview"
+              ghLink="https://github.com/Pranav-1100/video-flip-editor"
+              demoLink="https://video-flip-editor-ten.vercel.app/"
+            />
+          </Col>
+
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={weather}
